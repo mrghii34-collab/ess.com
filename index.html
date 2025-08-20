@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>সাইট ত্রুটি</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background:radial-gradient(circle at 20% 10%, #2b0b0b 0%, #0b0b0b 30%, #040405 100%);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif;
+    }
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .error{
+      width:100%;max-width:820px;
+      background:linear-gradient(180deg,#1a0b0b,#2b0b0b);
+      border-radius:18px;
+      padding:36px;
+      border:1px solid rgba(255,0,0,.08);
+      box-shadow:0 30px 60px rgba(0,0,0,.6);
+      color:#ffecec;
+      text-align:center;
+    }
+    h1{margin:0;font-size:32px}
+    p{margin:12px 0 0;font-size:18px;color:#ffdede}
+    .code{
+      margin-top:20px;
+      background:rgba(0,0,0,.25);
+      padding:12px;
+      border-radius:10px;
+      overflow:auto;
+      border:1px solid rgba(255,255,255,.03);
+      color:#ffdede;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', ()=>{
+      console.error('ERR_SITE_NOT_FOUND: সাইটটি আর পাওয়া যাচ্ছে না — জরুরি ত্রুটি পাওয়া গেছে।');
+    });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="error">
+      <h1>⚠ সাইটটি আর পাওয়া যাচ্ছে না</h1>
+      <p>জরুরি ত্রুটি পাওয়া গেছে।</p>
+      <div class="code">Error code: <strong>ERR_SITE_NOT_FOUND</strong></div>
+    </div>
+  </div>
+</body>
+</html>
